@@ -38,9 +38,22 @@ function writePassword() {
   console.log("function started")
   var password = generatePassword();
   var passwordText = document.querySelector("#password")
-
-
-  passwordText.value = password;
+function randomLowCase() {
+  return String.fromCharCode(Math.floor(Math.random()*26) + 97);
+}
+console.log(randomLowCase());
+function randomUppCase () {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+console.log(randomUppCase());
+function randomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+ } console.log(randomNumber()){
+ }
+ function randomSymbol() {
+  const symbols = "!@#$%^&*()";
+  return symbols [Math.floor(Math.random()) *symbols.length];
+ }console.log(randomSymbol());
 }
 
 // Add event listener to generate button
