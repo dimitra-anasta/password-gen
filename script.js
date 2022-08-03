@@ -23,7 +23,6 @@ function generatePassword() {
       var positionNumber = Math.floor(Math.random() * numbers.length)
       password = password + numbers[positionNumber]
     }
-  
     
     console.log(lowerCase)
   
